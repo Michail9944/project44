@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="Keywords" content="" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all,follow" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: #003B69;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #005AA1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+}
+
+.show {
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+<div id="obal">
+<div id="page">
+		<div id="header">
+
+		<h1>Системное администрирование персонального компьютера</h1>
+		
+<div id="footer1">Лаухин М.С., ЭУИС 4-4</div>
+		<div class="navbar">
+  <a href="home.html">Главная</a>
+  <a href="theme1.html">Разметка диска</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>ПО</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="f.html"><i>Файловые менеджеры</i></a>
+      <a href="r.html"><i>Средства работы с реестром</i></a>
+    </div>
+  </div> 
+</div>
+
+
+		</div>
+
+		<hr class="noscreen" />
+
+		<div id="col"><div id="col-in">
+
+
+		<h2>Разметка диска</h2>
+		<p>Разметка диска представляет из себя деление жесткого диска на области определенного размера.</p>
+		<p>Деление жесткого диска на разделы имеет ряд преимуществ. Во-первых, позволяет отделить системную область от пользовательской, что полезно с точки зрения безопасности файлов операционной системы. Во-вторых, разметка диска делает возможным создание разделов по назначениям. В-третьих, повышает быстродействие системы за счет возможности выбора для каждого раздела наиболее оптимального типа файловой системы и, соответственно, размера логической единицы – кластера.</p>
+		<p>Разметку диска можно сделать как с помощью стороннего программного обеспечения, так и с помощью средств Windows.</p>
+		<p>Для того, чтобы начать разбивку диска средствами операционной системы, нужно запустить диспетчер дисков путем нажатия сочетания клавиш Win+R</p>
+		<img src="img/Разметка.png"  class="scale" height="400" alt="1"/>
+		<p>Управление дисками. Главное окно. </p>
+		<img src="img/Разметка1.png"  class="scale" height="400" alt="2"/>
+		<p>Выбираем диск и с помощью вызова контекстного меню выбирает операцию сжатия тома. После этого начнется определение доступного для сжатия места.</p>
+		<p>Далее выбираем размер сжимаемого пространства и нажимаем кнопку "сжать" </p>
+		<img src="img/Разметка2.png"  class="scale" height="400" alt="3"/>
+
+		<p>Выбираем создание нового тома. </p>
+		<img src="img/Разметка3.png"  class="scale" height="400" alt="4"/>
+		<p>Указываем размер тома. </p>
+		<img src="img/Разметка4.png"  class="scale" height="400" alt="5"/>	
+		<p>Выбираем букву для диска. </p>
+		<img src="img/Разметка5.png" class="scale" height="400" alt="6"/>
+		<p>Далее переходим к выбору файловой системы, размера кластера и метки тома. Оставляем настройки по умолчанию: файловая система – NTFS, размер кластера – по умолчанию, метка тома –"Новый том".</p>
+		<img src="img/Разметка6.png"  class="scale" height="400" alt="7"/>
+		<p>Новый созданный том:</p>
+		<img src="img/Разметка7.png"  class="scale" height="400" alt="8"/>
+		<p>Результат:</p>
+		<img src="img/Разметка8.png"  class="scale" height="30" alt="9"/>
+
+		</div></div>
+
+		<hr class="noscreen" />
+
+	</div>
+</div>
+
+
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>

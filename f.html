@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="Keywords" content="" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all,follow" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: #003B69;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #005AA1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+}
+
+.show {
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+<div id="obal">
+<div id="page">
+		<div id="header">
+
+		<h1>Системное администрирование персонального компьютера</h1>
+		
+<div id="footer1">Лаухин М.С., ЭУИС 4-4</div>
+		<div class="navbar">
+  <a href="home.html">Главная</a>
+  <a href="theme1.html">Разметка диска</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>ПО</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="f.html"><i>Файловые менеджеры</i></a>
+      <a href="r.html"><i>Средства работы с реестром</i></a>
+    </div>
+  </div> 
+</div>
+
+
+		</div>
+
+		<hr class="noscreen" />
+
+		<div id="col"><div id="col-in">
+
+
+		<h2>Файловые менеджеры</h2>
+        <p>На любой операционной системе обязательно должен присутствовать интерфейс, позволяющий работать пользователю с файлами компьютера. </p>
+
+        <p>На современных операционных системах есть встроенные файловые менеджеры, которые отлично справляются со своей работой. </p>
+
+        <p>Но находятся пользователи, которым встроенных интерфейсов становится недостаточно, поэтому они предпочитают устанавливать сторонние. </p>
+
+        <p>Здесь мы рассмотрим 3 примера файловых менеджера. </p>
+
+        <div id="footer2">XyPlorer</div>
+        <p><strong><i>Xyplorer</i></strong> – один из рассматриваемых нами сегодня файловых менеджеров.</p>
+              
+        <p>Сам XyPlorer заточен под быстродействие, он мало нагружает операционную систему и занимает совсем немного оперативной памяти.</p>
+
+        <p>Интерфейс приятный и простой. Имеется неограниченное количество вкладок, число которых можно настраивать. </p>
+
+		    <img src="img/xy1.png" class="scale" height="400" alt="7"/>
+		    <p>Управление дисками. Главное окно. </p>
+
+        <p >Имеются все стандартные функции, такие как "скопировать-вставить" и т.п. Много настроек графического интерфейса: шрифты, цвета, цветовые фильтры, визуальные фильтры.</p>
+
+		    <img src="img/xy2.png" class="scale" height="400" alt="7"/>
+
+        <p>На первый взгляд, вполне неплохой файловый менеджер</p>
+
+
+       <div id="footer3">Directory Opus</div>
+
+              <p><strong><i>Directory Opus</i></strong> старый файловый менеджер, созданный еще аж в 1990 году и является заменителем стандартного Проводника Windows.</p>
+
+              <p>Первый и сразу заметный недостаток заключается в том, что, в отличие от прошлой утилиты, эта является платной и пользоваться мы можем только ограниченное время в пробной версии.</p>
+
+              <p>Также, в этом менеджере отсутствует русская локализация, что станет очевидным препятствием для русского пользователя, плохо знающего английский.</p>
+          <img src="img/do1.png" class="scale" height="400" alt="7"/>
+
+              <p>Зато здесь присутствует возможность настривать FTP-соединение, чего нет в прошлом ПО.</p>
+
+              <p>Попробуем соединиться по FTP-соединению к какому-нибудь серверу и скачать файл:</p>
+              <img src="img/do2.png" class="scale" height="400" alt="7"/>
+
+
+              <p>Мы смогли соединиться и можем качать файлы с удаленного сервера:</p>
+<img src="img/do3.png" class="scale" height="400" alt="7"/>
+
+                      <p class="решение">Подводя итоги для этого менеджера, можно сказать, что он имеет достаточный функционал, не меньший, чем у прошлого и позволяет соединяться через FTP-соединение. Однако не имеет русской локализации. Каждый вправе выбрать для себя сам</p>      
+
+
+        <div id="footer4">Q-Dir</div>
+          <p><strong><i>Q-Dir</i></strong> – утилита, вобравшая в себя все преимущества двух прошлых менеджеров.</p>
+
+          <p>В Q-Dir по-умолчанию 4 рабочих экрана, позволяет работать со множеством дерикторий, дисков и накопителей.</p>
+          <img src="img/qd1.png" class="scale" height="400" alt="7"/>          
+          <p>Имеет множество языков, в том числе и русский, есть встроенный FTP-клиент. Сама программа бесплатная, что тоже приятно.</p>
+          <p>Подводя итоги, можно сказать, что этот файловый менеджер объективно самый лучший из рассматриваемых, хотя и имеет не настолько привлекательный дизайн, нежели XyPlorer.</p>
+
+		</div></div>
+
+		<hr class="noscreen" />
+
+</div>
+</div>
+
+
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<meta name="Description" content="" />
+<meta name="author" content="" />
+<meta name="Keywords" content="" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all,follow" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
+<link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+<style type="text/css">
+	.navbar {
+    overflow: hidden;
+    background-color: #003B69;////////////////////////////
+    font-family: Times new roman, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color:  #005AA1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+}
+
+.show {
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+<div id="obal">
+<div id="page">
+		<div id="header">
+
+		<h1>Системное администрирование персонального компьютера</h1>
+		
+<div id="footer1">Лаухин М.С., ЭУИС 4-4</div>
+		<div class="navbar">
+  <a href="home.html">Главная</a>
+  <a href="theme1.html">Разметка диска</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()"><strong>ПО</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="f.html"><i>Файловые менеджеры</i></a>
+      <a href="r.html"><i>Средства работы с реестром</i></a>
+    </div>
+  </div> 
+</div>
+
+
+		</div>
+
+		<hr class="noscreen" />
+
+		<div id="col"><div id="col-in">
+
+
+		<h2>Средства работы с реестром</h2>
+            <p><strong><i>Реестр</i></strong> - это большая база данных, в которой хранятся все настройки и параметры нашей операционной системы. </p>
+            <p>Также в реестре, кроме параметров ОС, хранятся данные о параметрах приложений, файлов, пользователей и т.д. Во время работы ОС к реестру постоянно обращаются множество процессов, часто число таких обращений бывают тысячи и более. </p>
+            <p>Здесь мы рассмотрим 3 программы, позволяющие работать с реестром - просматривать, изменять его и оптимизировать. </p>
+            <p>-Просмотр изменений в реестре - Reg Shot</p>
+            <p>-Изменение параметров в реестре - Advanced Regedit</p>
+            <p>-Оптимизация реестрового пространства - Ccleaner</p>
+            <p>Рассмотрим способы работы с программами и их механизмы работы с реестром.</p>
+      <div id="footer2">RegShot</div>
+            <p><strong><i>RegShot</i></strong> – программа, создающая снимки реестра для просмотра.</p>
+            <p>Можно просмотреть, какие записи добавились в реестре, к примеру, после установки какой-либо программы.</p> <!-- target="_blank" позволяет открывать ссылку в новом окне -->
+            <p>Например, мы хотим сделать скриншот до установки программы и, соответственно, до изменения в реестровом пространстве. </p>
+            <img src="img/reg1.png" class="scale" height="400" alt="7"/>
+            <p>Чтобы сделать второй снимок, нажимаем <strong>Снимок 2</strong>:</p>
+            <img src="img/reg2.png" class="scale" height="400" alt="7"/>
+            <p>Для сравнения нажимаем <strong>Сравнить</strong>, после откроется окно, где мы должны выбрать разделы, которые будем сравнивать. </p>
+            <img src="img/reg3.png" class="scale" height="400" alt="7"/>
+            <p>Отчет откроется в браузере:</p>
+            <img src="img/reg4.png" class="scale" height="400" alt="7"/>             
+            <p>Достаточно простая утилита, однако, очень важная, если нам требуется проследить то, как приложение взаимодействует с реестром. </p>
+
+      <div id="footer3">Advanced Regedit</div>
+            <p><strong><i>Advanced Regedit</i></strong> – позволяет вносить изменения в данные реестра.</p>
+            <p>Часто, для решения некоторых проблем, требуется изменить нужные значения в реестре ОС.</p>
+            <p>Например, на последней, десятой, версии ОС Windows пользователей крайне донимали несвоевременные обновления операционной системы. Такие обновления были настолько наглыми и неожиданными, что даже был случай, когда на всемирном киберспортивном чемпионате игрок выбыл из-за, кто бы мог подумать, неожиданного принудительного обновления Windows.</p>
+            <p>Чтобы отключить автообновление в Windows, необходимо сменить один из параметров, находящихся в системной директории с 1 на 0.</p>
+            <p>Как раз в таких случаях нам поможет Advanced Regedit. Интерфейс выглядит следующим образом:</p>
+            <img src="img/AR1.png" class="scale" height="400" alt="7"/>
+            <p>Слева наши директории, а справа данные, содержащиеся в них</p>
+            <p>Рассмотрим на примере решение уже упонятуной проблемы - отключим надоедливое автообновление:</p>
+            <p>Для этого нам нужно перейти в директорию <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows</strong>.</p>
+            <img src="img/AR2.png" class="scale" height="400" alt="7"/>
+            <p>Создаем раздел с названием <strong>"WindowsUpdate"</strong>, а в нем раздел <strong>"AU"</strong>:</p>
+            <p>После этого нам потребуется создать параметр типа DWORD с именем <strong>"NoAutoUpdate"</strong> и значением <strong>1</strong>, который и будет отвечать за отключение автообновления.  P.S Поля <strong>HEX</strong> и <strong>DEC</strong> значат, соотетственно, шестнадцатеричную и десятеричную систему счисления. Вводим единицу в "шестнадцатеричное поле</p>
+            <img src="img/AR3.png" class="scale" height="400" alt="7"/>
+            <p>Все готово. Теперь можем проверить отключенные автообновления в <strong>службах</strong> Windows. Для этого нажимаем сочетание клавиш <strong>Win+R</strong> и в появившемся окне вводим <strong>"services.msc"</strong>:</p>
+            <p>Находим службу <strong>WindowsUpdate</strong> или <strong>Центр обновления Windows</strong> и смотрим на ее состояние:</p>
+            <img src="img/AR4.png" class="scale" height="400" alt="7"/>
+            <img src="img/AR5.png" class="scale" height="400" alt="7"/>        
+            <p>Как видим, служба успешно отключена. Кстати, говоря, отключить ее можно как раз через это окно, но бывают случаи, когда это сделать не позволяет нам Windows и приходится прибегать в редакторам реестра.</p>
+            <p>Как заключение об этой утилите хотелось бы сказать, что в Windows есть встроенный редактор реестра, по функционалу не отличающейся от нашей программы. Но неоспоримым премуществом и, к сожалению, единственным для нашего ПО является улучшенная функция поиска по реестру, которая работает гораздо лучше, чем оригинальный редактор. К тому же, неоригинальный редактор не трубует установки.</p>
+
+      <div id="footer4"><div id="footer-in">Ccleaner</div></div>
+            <p><strong><i>Ccleaner</i></strong> – простая и многофункциональная утилита, которую создавали для оптимизации пространства реестра и дискового пространства.</p>
+            <p>Изначально имела функцию очистки реестра и диска от захламляющих данных, а на сегодняшний день имеет такие функции как: удаление программ, обновление программ, настройки автозапуска, управление расширениями браузера, анализ дисков (сколько места занимают разные типы файлов на компьютере), поиск файлов-дубликатов, восстановление системы и тирание дисков.</p>
+            <img src="img/CC1.png" class="scale" height="400" alt="7"/>
+            <p>Стоит заметить, что со временем, программа стала крайне популярной и востребованной среди пользователей.</p>
+            <p>Рассмотрим, для чего нужна очистка реестра и как это работает:</p>
+            <img src="img/CC2.png" class="scale" height="400" alt="7"/>
+            <p>Для работы операционной системы, как уже говорилось, необходимо иметь возможность обращения к данным реестра. Со временем, чем больше мы устанавливаем и удаляем приложения и программы, реестр пополняется количеством записей. Такое обилие записей влечет за собой замедление работы операционной системы в связи с большим количеством записей. Проще говоря, чтобы обратиться к данным реестра, нужно найти подхядящую запись. Поэтому мы идем по списку, постоянно задавая вопрос <strong>Это нужная нам запись?</strong>, пока не дойдем до соответствующей. Таким образом, чем больше записей, тем больше перебирать их придется, тем больше времени на это уходит. </p>
+            <p>Алгоритмы Ccleaner находят записи, которые уже не актуальны. Такое случается, к примеру, когда мы удаляем программу, а запись о ней в реестре остается.</p>
+            <p>Так вот, чтобы очистить реестр, мы заходим во вкладку <strong>Реестр</strong> и видим список того, что мы будем искать. Если хотим макимально избавиться от ненужного, ставим галочки везде. После этого нажимаем <strong>Поиск проблем</strong> и ждем окончания проверки:</p>
+            <img src="img/CC3.png" class="scale" height="400" alt="7"/>
+            <p>После проверки на экране появится список данных реестра, которые можно удалить. Ознакомившись со списком, нажимаем <strong>Исправить выбранные</strong>, в открывшемся окне нам предлагают сделать копию реестра перед изменениями на случай, если программа ошибочно удалит важные записи. Чаще всего, конечно, такого не случается, поэтому лично я привык резервную копию не делать.</p>
+            <img src="img/CC4.png" class="scale" height="400" alt="7"/>
+            <p>После очистки рекомендуется провести проверку еще несколько раз. Ccleaner не определяет все ошибки с первого раза. Вот кстати, пример второй проверки сразу после первой:</p>
+            <img src="img/CC5.png" class="scale" height="400" alt="7"/>
+            <p>У меня он нашел всего одну запись, но у пользователя, который не чистил реестр вообще или делал это достаточно давно, таких записей и во второй, и в третий раз появится достаточно.</p>
+            <p class="решение">Ccleaner простая и удобная программа, которая позволяет избавиться от ненужного хлама в реестре, пусть совсем и немного, но ускорив работу ОС. Помимо чистки реестра имеет много других инструментов, что делает программу многофункциональной и востребованной.</p>
+		</div></div>
+
+		<hr class="noscreen" />
+
+</div>
+</div>
+
+
+<script type = "text/javascript">
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>
